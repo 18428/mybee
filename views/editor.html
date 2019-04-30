@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editor</title>
+</head>
+<body>
+editor.html
+<div>
+    姓名：{{.name}} <br>
+    性别：{{.sex}} <br>
+    年龄：{{.age}} <br>
+
+    {{range $ind, $elem := .country}}
+        <div>key:{{$ind}},value:{{$elem}}</div>
+    {{end}}
+</div>
+</body>
+</html>
